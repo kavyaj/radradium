@@ -90,8 +90,6 @@ a.rr-tile:hover { transform: translateY(-3px) rotate(-1.5deg); }
 .rr-tile--dial { background: var(--dial); color: var(--on-dial); box-shadow: 0 6px 16px rgba(18, 26, 21, 0.12); }
 .rr-tile--dial .rr-tile-num, .rr-tile--dial .rr-tile-name { color: var(--on-dial-muted); }
 .rr-tile--dial .rr-tile-sym--glow { color: var(--radium); text-shadow: 0 0 16px rgba(125, 242, 121, 0.5); }
-.rr-tile--white { background: var(--paper-raised); color: var(--ink); box-shadow: var(--shadow-tile); }
-.rr-tile--white .rr-tile-num, .rr-tile--white .rr-tile-name { color: var(--muted); }
 .rr-tile--next { border: 1.5px dashed var(--line-strong); color: var(--muted); }
 @media (max-width: 640px) { .rr-periodic-grid { flex-basis: 100%; } }
 
@@ -130,21 +128,6 @@ a.rr-tile:hover { transform: translateY(-3px) rotate(-1.5deg); }
 .rr-service-desc { margin: 0; font-size: 18px; line-height: 1.55; color: var(--ink-2); max-width: 36em; }
 .rr-service-meta { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 
-/* by the way band */
-.rr-btw-band { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 48px; padding: 24px 32px; border-radius: 24px; background: var(--paper-2); }
-.rr-btw-head { flex: 0 0 220px; display: flex; flex-direction: column; gap: 8px; }
-.rr-btw-desc { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
-.rr-btw-grid { flex: 1 1 480px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px 24px; }
-.rr-btw-item { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); min-height: 44px; }
-.rr-btw-item:hover b { text-decoration: underline; text-decoration-color: var(--radium-deep); text-underline-offset: 3px; }
-.rr-btw-icon { flex: 0 0 56px; height: 56px; padding: 6px 7px; box-sizing: border-box; border-radius: 10px; background: var(--paper-raised); box-shadow: var(--shadow-tile); display: flex; flex-direction: column; justify-content: space-between; }
-.rr-btw-icon-num { font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--muted); }
-.rr-btw-icon-sym { font-family: var(--font-display); font-size: 20px; font-weight: 600; line-height: 1; }
-.rr-btw-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.rr-btw-title { font-size: 15px; font-weight: 600; }
-.rr-btw-item-desc { font-size: 13px; line-height: 1.4; color: var(--ink-2); }
-@media (max-width: 640px) { .rr-btw-band { padding: 20px; } }
-
 /* about */
 .rr-about { padding-bottom: 96px; display: flex; flex-wrap: wrap; gap: 32px 64px; }
 .rr-about-side { flex: 0 0 220px; display: flex; flex-direction: column; gap: 16px; }
@@ -155,7 +138,6 @@ a.rr-tile:hover { transform: translateY(-3px) rotate(-1.5deg); }
 /* section paddings */
 .rr-products { padding-top: 32px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 32px; }
 .rr-service { padding-bottom: 80px; display: flex; flex-direction: column; gap: 32px; }
-.rr-sideprojects { padding-bottom: 96px; }
 
 /* footer */
 .rr-footer { background: var(--paper-2); }

@@ -13,12 +13,13 @@ Everything on the page serves one of those two. If it serves neither, cut it.
 
 ## Page hierarchy
 
-Products lead, the service follows, side projects get a "by the way". Use this order on every page that lists projects:
+Products lead, the service follows. Use this order on every page that lists projects:
 
 1. **Products** in `ElementCard` with `rr-card--product` (dial), three across.
 2. **Service** in one `ElementCard` with `rr-card--service rr-card--wide` (radium).
-3. **Side projects** in a single `ByTheWay` band on `paper-2`. Never a full section, never a heading in `display-l`.
-4. **Company details** in `Footer`.
+3. **Company details** in `Footer`.
+
+Side projects aren't featured on the homepage at all — no section, no hero tile. They still get an entry in the element table below, since a project keeps its number whether or not it's shown.
 
 ## The elements
 
@@ -28,12 +29,12 @@ Products lead, the service follows, side projects get a "by the way". Use this o
 | 89 | Rp | Resumey.Pro | Product | dial |
 | 90 | Sc | StoryCV | Product | dial |
 | 91 | Rt | Red Thread Careers | Service | radium |
-| 92 | Mr | MRT Announcements | Side project | paper |
-| 93 | Ps | Poke & See | Side project | paper |
-| 94 | Bq | BollyQuiz | Side project | paper |
+| 92 | Mr | MRT Announcements | Side project | not on homepage |
+| 93 | Ps | Poke & See | Side project | not on homepage |
+| 94 | Bq | BollyQuiz | Side project | not on homepage |
 | 95 | Ag | Again & Again | Product (new) | dial |
 
-Rules: a project keeps its number forever, retired or not. A new project takes the next free number. Symbols are two letters from the name, first capitalised. Category decides the tile colour, never mood: products are `dial`, the service is `radium`, side projects are `paper-raised`.
+Rules: a project keeps its number forever, retired or not. A new project takes the next free number. Symbols are two letters from the name, first capitalised. Category decides the tile colour, never mood: products are `dial`, the service is `radium`. Side projects don't get a homepage tile or section.
 
 ## Voice
 
@@ -51,7 +52,7 @@ Write like Kavya talks: sharp, human, honest, occasionally wry.
 
 Light site, always. The only dark surface is `dial`, and only inside cards and tiles.
 
-- Page: `paper`. Sunken bands (side projects, footer): `paper-2`. Raised paper: `paper-raised`.
+- Page: `paper`. Sunken bands (footer): `paper-2`. Raised paper: `paper-raised`.
 - Text: `ink` for headings and body, `ink-2` for descriptions, `muted` for meta. On dial: `on-dial` and `on-dial-muted`.
 - `radium` is a fill, never text on paper (it fails contrast). When radium needs to be text on paper, use `radium-deep`.
 - `radium-glow` is light, not paint: halos around radium symbols only.

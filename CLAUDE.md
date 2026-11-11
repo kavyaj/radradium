@@ -21,15 +21,15 @@ The company site for Radradium, a small web studio registered in Singapore (UEN 
 
 - Light site only. The only dark surface is `dial` (#0f1a14), and only inside product cards and tiles.
 - Glow, not gloss: no sheen, glare, highlight rims or gradient fills. The one light effect is the radium text-shadow on symbols.
-- Products lead, then the one service (Red Thread Careers), then side projects in the small "By the way" strip. Never promote a side project above it.
-- Tile colour follows category: products `dial`, service `radium`, side projects white.
+- Products lead, then the one service (Red Thread Careers). Side projects aren't featured on the homepage — they keep their element numbers but don't get a hero tile, a section, or a JSON-LD brand entry.
+- Tile colour follows category: products `dial`, service `radium`.
 - Every outbound link has `target="_blank" rel="noopener noreferrer"` and ends with `↗`. In-page anchors don't.
 - Copy voice: short sentences, contractions, wry and specific. Never em dashes. Never "landscape", "leverage", "game-changer", "unlock", "delve", "quietly", or "This isn't X, this is Y".
 
 ## Adding a new project
 
 1. Give it the next free number (96 is next) and a two-letter symbol.
-2. Add it to the hero periodic grid, its section (Products, Service or By the way), the JSON-LD `brand` list, the element table in `design/brand-book.md`, and regenerate `og-image.png` if the grid changed.
+2. Add it to `design/brand-book.md`'s element table. If it's a product or the service, also add it to the hero periodic grid, its section (Products or Service), the JSON-LD `brand` list, and regenerate `og-image.png` if the grid changed. Side projects stop there — no homepage tile, section, or JSON-LD entry.
 3. Update `<lastmod>` in `sitemap.xml`.
 
 ## Checks before every push
