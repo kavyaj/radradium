@@ -117,35 +117,14 @@
  ]
 }
 </script>
-<style>
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@font-face{font-family:"Unbounded";src:url("/assets/fonts/unbounded.woff2") format("woff2");font-weight:200 900;font-display:swap}
-@font-face{font-family:"Instrument Sans";src:url("/assets/fonts/instrument-sans.woff2") format("woff2");font-weight:400 700;font-display:swap}
-@font-face{font-family:"JetBrains Mono";src:url("/assets/fonts/jetbrains-mono.woff2") format("woff2");font-weight:100 800;font-display:swap}
-body{margin:0;background:#f6f5ef;color:#121a15;font-family:"Instrument Sans",ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#137a35}a:hover{color:#121a15}
-:focus-visible{outline:2px solid #137a35;outline-offset:3px}
-.rr-nav a{color:#3b4540;text-decoration:none}.rr-nav a:hover{color:#121a15}
-.rr-btn{transition:transform 80ms ease-out,box-shadow 80ms ease-out}
-.rr-btn:hover{transform:translateY(-1px)}
-.rr-btn:active{transform:translateY(4px);box-shadow:none !important}
-.rr-card{transition:transform 160ms ease-out,box-shadow 160ms ease-out}
-.rr-card:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(18,26,21,.10),0 24px 48px rgba(18,26,21,.22) !important}
-.rr-card:hover .rr-sym-glow{text-shadow:0 0 2px #b8ff9e,0 0 34px rgba(125,242,121,.8) !important}
-.rr-tile{transition:transform 140ms ease-out}
-a.rr-tile:hover{transform:translateY(-3px) rotate(-1.5deg)}
-.rr-btw-item:hover b{text-decoration:underline;text-decoration-color:#137a35;text-underline-offset:3px}
-.rr-tile{min-width:0}.rr-tile>span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-@media (prefers-reduced-motion:reduce){.rr-card,.rr-card:hover,.rr-btn,.rr-tile,a.rr-tile:hover{transition:none;transform:none}}
-</style>
+<link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<div style="min-height: 100%; background: #f6f5ef; color: #121a15">
+<div class="rr-page">
 
-<header style="max-width: 1216px; margin: 0 auto; padding: 20px 48px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
-<a href="/" aria-label="Radradium home" style="display: block"><img src="/assets/img/radradium-wordmark.svg" alt="Radradium" width="152" height="36" style="height: 36px; width: auto; display: block"></a>
-<nav class="rr-nav" style="display: flex; flex-wrap: wrap; gap: 28px; align-items: center; font-size: 15px; font-weight: 500">
+<header class="rr-header rr-wrap">
+<a href="/" aria-label="Radradium home" class="rr-logo-link"><img src="/assets/img/radradium-wordmark.svg" alt="Radradium" width="152" height="36" style="height: 36px; width: auto; display: block"></a>
+<nav class="rr-nav">
 <a href="#products">Products</a>
 <a href="#service">Service</a>
 <a href="#about">About</a>
@@ -154,128 +133,128 @@ a.rr-tile:hover{transform:translateY(-3px) rotate(-1.5deg)}
 
 <main>
 
-<section id="top" style="max-width: 1216px; margin: 0 auto; padding: 88px 48px 96px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center; justify-content: space-between">
-<div style="flex: 1 1 520px; max-width: 640px; display: flex; flex-direction: column; gap: 28px">
-<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #3b4540">Element 88 · Singapore</div>
-<h1 style="margin: 0; font-family: Unbounded, ui-sans-serif, sans-serif; font-weight: 600; font-size: clamp(44px, 6vw, 72px); line-height: 0.98; letter-spacing: -0.03em">Small web products, made one <span style="background: linear-gradient(transparent 62%, #7df279 62%, #7df279 92%, transparent 92%); padding: 0 0.06em">element</span> at a time.</h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.5; color: #3b4540; max-width: 34em">Radradium is a tiny studio in Singapore. We build tools for job seekers, small shops and (occasionally) toddlers.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center">
-<a class="rr-btn" href="#products" style="display: inline-flex; align-items: center; gap: 8px; padding: 0.8em 1.3em; border-radius: 16px; border: 2px solid #3fae4a; background: #7df279; color: #121a15; font-size: 16px; font-weight: 600; line-height: 1.1; text-decoration: none; box-shadow: 0 4px 0 #3fae4a">See what we make ↓</a>
-<a class="rr-btn" href="#about" style="display: inline-flex; align-items: center; gap: 8px; padding: 0.8em 1.3em; border-radius: 16px; border: 2px solid #868a83; background: #ffffff; color: #121a15; font-size: 16px; font-weight: 600; line-height: 1.1; text-decoration: none; box-shadow: 0 4px 0 #dedcd2">Who's behind it</a>
+<section id="top" class="rr-hero rr-wrap">
+<div class="rr-hero-copy">
+<div class="rr-kicker">Element 88 · Singapore</div>
+<h1 class="rr-h1">Small web products, made one <span class="rr-mark">element</span> at a time.</h1>
+<p class="rr-lead">Radradium is a tiny studio in Singapore. We build tools for job seekers, small shops and (occasionally) toddlers.</p>
+<div class="rr-btn-row">
+<a class="rr-btn rr-btn-primary" href="#products">See what we make ↓</a>
+<a class="rr-btn rr-btn-secondary" href="#about">Who's behind it</a>
 </div>
 </div>
 
-<div aria-label="The Radradium periodic table" style="flex: 0 1 392px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
-<div class="rr-tile" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #7df279; color: #121a15; box-shadow: inset 0 0 0 1px #3fae4a, 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700">88</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1">Rr</span><span style="font-size: 12px; font-weight: 500">Radradium</span></div>
-<a class="rr-tile" target="_blank" rel="noopener noreferrer" href="https://resumey.pro" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #0f1a14; color: #f1f5ee; text-decoration: none; box-shadow: 0 6px 16px rgba(18,26,21,.12); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #9db3a5">89</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #7df279; text-shadow: 0 0 16px rgba(125,242,121,.5)">Rp</span><span style="font-size: 12px; font-weight: 500; color: #9db3a5">Resumey.Pro</span></a>
-<a class="rr-tile" target="_blank" rel="noopener noreferrer" href="https://story.cv" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #0f1a14; color: #f1f5ee; text-decoration: none; box-shadow: 0 6px 16px rgba(18,26,21,.12); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #9db3a5">90</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #7df279; text-shadow: 0 0 16px rgba(125,242,121,.5)">Sc</span><span style="font-size: 12px; font-weight: 500; color: #9db3a5">StoryCV</span></a>
-<a class="rr-tile" target="_blank" rel="noopener noreferrer" href="https://redthreadcareers.com" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #7df279; color: #121a15; text-decoration: none; box-shadow: inset 0 0 0 1px #3fae4a, 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700">91</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1">Rt</span><span style="font-size: 12px; font-weight: 500">Red Thread</span></a>
-<a class="rr-tile" target="_blank" rel="noopener noreferrer" href="https://kavyaj.github.io/mrt-announcements/" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #ffffff; color: #121a15; text-decoration: none; box-shadow: 0 1px 2px rgba(18,26,21,.06), 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #5d665f">92</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1">Mr</span><span style="font-size: 12px; font-weight: 500; color: #5d665f">MRT Announcements</span></a>
-<a class="rr-tile" target="_blank" rel="noopener noreferrer" href="https://pokeandsee.com" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #ffffff; color: #121a15; text-decoration: none; box-shadow: 0 1px 2px rgba(18,26,21,.06), 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #5d665f">93</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1">Ps</span><span style="font-size: 12px; font-weight: 500; color: #5d665f">Poke &amp; See</span></a>
-<a class="rr-tile" target="_blank" rel="noopener noreferrer" href="https://bollyquiz.com" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #ffffff; color: #121a15; text-decoration: none; box-shadow: 0 1px 2px rgba(18,26,21,.06), 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #5d665f">94</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1">Bq</span><span style="font-size: 12px; font-weight: 500; color: #5d665f">BollyQuiz</span></a>
-<a class="rr-tile" target="_blank" rel="noopener noreferrer" href="https://againandagaincards.com" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; background: #0f1a14; color: #f1f5ee; text-decoration: none; box-shadow: 0 6px 16px rgba(18,26,21,.12); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #9db3a5">95</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #7df279; text-shadow: 0 0 16px rgba(125,242,121,.5)">Ag</span><span style="font-size: 12px; font-weight: 500; color: #9db3a5">Again &amp; Again</span></a>
-<div class="rr-tile" style="aspect-ratio: 1; padding: 12px 14px; box-sizing: border-box; border-radius: 16px; border: 1.5px dashed #868a83; color: #5d665f; display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700">96</span><span style="font-family: Unbounded, sans-serif; font-size: 34px; font-weight: 600; line-height: 1">?</span><span style="font-size: 12px; font-weight: 500">Next up</span></div>
+<div aria-label="The Radradium periodic table" class="rr-periodic-grid">
+<div class="rr-tile rr-tile--radium"><span class="rr-tile-num">88</span><span class="rr-tile-sym">Rr</span><span class="rr-tile-name">Radradium</span></div>
+<a class="rr-tile rr-tile--dial" target="_blank" rel="noopener noreferrer" href="https://resumey.pro"><span class="rr-tile-num">89</span><span class="rr-tile-sym rr-tile-sym--glow">Rp</span><span class="rr-tile-name">Resumey.Pro</span></a>
+<a class="rr-tile rr-tile--dial" target="_blank" rel="noopener noreferrer" href="https://story.cv"><span class="rr-tile-num">90</span><span class="rr-tile-sym rr-tile-sym--glow">Sc</span><span class="rr-tile-name">StoryCV</span></a>
+<a class="rr-tile rr-tile--radium" target="_blank" rel="noopener noreferrer" href="https://redthreadcareers.com"><span class="rr-tile-num">91</span><span class="rr-tile-sym">Rt</span><span class="rr-tile-name">Red Thread</span></a>
+<a class="rr-tile rr-tile--white" target="_blank" rel="noopener noreferrer" href="https://kavyaj.github.io/mrt-announcements/"><span class="rr-tile-num">92</span><span class="rr-tile-sym">Mr</span><span class="rr-tile-name">MRT Announcements</span></a>
+<a class="rr-tile rr-tile--white" target="_blank" rel="noopener noreferrer" href="https://pokeandsee.com"><span class="rr-tile-num">93</span><span class="rr-tile-sym">Ps</span><span class="rr-tile-name">Poke &amp; See</span></a>
+<a class="rr-tile rr-tile--white" target="_blank" rel="noopener noreferrer" href="https://bollyquiz.com"><span class="rr-tile-num">94</span><span class="rr-tile-sym">Bq</span><span class="rr-tile-name">BollyQuiz</span></a>
+<a class="rr-tile rr-tile--dial" target="_blank" rel="noopener noreferrer" href="https://againandagaincards.com"><span class="rr-tile-num">95</span><span class="rr-tile-sym rr-tile-sym--glow">Ag</span><span class="rr-tile-name">Again &amp; Again</span></a>
+<div class="rr-tile rr-tile--next"><span class="rr-tile-num">96</span><span class="rr-tile-sym">?</span><span class="rr-tile-name">Next up</span></div>
 </div>
 </section>
 
-<section id="products" style="max-width: 1216px; margin: 0 auto; padding: 32px 48px 80px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: flex-end; justify-content: space-between">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #3b4540">Products</div>
-<h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1; letter-spacing: -0.025em">Things you can use today</h2>
+<section id="products" class="rr-products rr-wrap">
+<div class="rr-section-head">
+<div class="rr-section-head-left">
+<div class="rr-kicker">Products</div>
+<h2 class="rr-h2">Things you can use today</h2>
 </div>
-<p style="margin: 0; max-width: 26em; font-size: 17px; line-height: 1.55; color: #3b4540">For people staring at a blank resume, and cafés still handing out paper stamp cards.</p>
+<p class="rr-section-desc">For people staring at a blank resume, and cafés still handing out paper stamp cards.</p>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
-<a class="rr-card" target="_blank" rel="noopener noreferrer" href="https://resumey.pro" style="position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; gap: 8px; min-height: 340px; padding: 24px; border-radius: 24px; text-decoration: none; background: #0f1a14; color: #f1f5ee; box-shadow: 0 1px 2px rgba(18,26,21,.10), 0 14px 34px rgba(18,26,21,.18)">
-<div style="display: flex; align-items: center; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: #9db3a5">89</span><span style="padding: 4px 10px; border-radius: 999px; background: #1f2e25; color: #9db3a5; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">Since 2019</span></div>
-<div class="rr-sym-glow" style="margin-top: 24px; font-family: Unbounded, sans-serif; font-size: 56px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #7df279; text-shadow: 0 0 2px #b8ff9e, 0 0 22px rgba(125,242,121,.55)">Rp</div>
-<div style="margin-top: 8px; font-family: Unbounded, sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.15">Resumey.Pro</div>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #9db3a5; max-width: 34ch">Write your resume in Markdown. Get a clean PDF back, no fighting with margins.</p>
-<div style="margin-top: auto; padding-top: 16px; display: flex; align-items: center; justify-content: space-between"><span style="padding: 6px 12px; border-radius: 999px; background: #1f2e25; color: #f1f5ee; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600">resumey.pro ↗</span></div>
+<div class="rr-card-grid">
+<a class="rr-card rr-card--product" target="_blank" rel="noopener noreferrer" href="https://resumey.pro">
+<div class="rr-card-top"><span class="rr-card-num">89</span><span class="rr-pill rr-pill--dial">Since 2019</span></div>
+<div class="rr-sym-glow">Rp</div>
+<div class="rr-card-title">Resumey.Pro</div>
+<p class="rr-card-desc">Write your resume in Markdown. Get a clean PDF back, no fighting with margins.</p>
+<div class="rr-card-footer"><span class="rr-url-pill rr-url-pill--dial">resumey.pro ↗</span></div>
 </a>
 
-<a class="rr-card" target="_blank" rel="noopener noreferrer" href="https://story.cv" style="position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; gap: 8px; min-height: 340px; padding: 24px; border-radius: 24px; text-decoration: none; background: #0f1a14; color: #f1f5ee; box-shadow: 0 1px 2px rgba(18,26,21,.10), 0 14px 34px rgba(18,26,21,.18)">
-<div style="display: flex; align-items: center; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: #9db3a5">90</span><span style="padding: 4px 10px; border-radius: 999px; background: #1f2e25; color: #9db3a5; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">Since 2025</span></div>
-<div class="rr-sym-glow" style="margin-top: 24px; font-family: Unbounded, sans-serif; font-size: 56px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #7df279; text-shadow: 0 0 2px #b8ff9e, 0 0 22px rgba(125,242,121,.55)">Sc</div>
-<div style="margin-top: 8px; font-family: Unbounded, sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.15">StoryCV</div>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #9db3a5; max-width: 34ch">Talk through your work. Walk away with resume bullets that sound like you.</p>
-<div style="margin-top: auto; padding-top: 16px; display: flex; align-items: center; justify-content: space-between"><span style="padding: 6px 12px; border-radius: 999px; background: #1f2e25; color: #f1f5ee; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600">story.cv ↗</span></div>
+<a class="rr-card rr-card--product" target="_blank" rel="noopener noreferrer" href="https://story.cv">
+<div class="rr-card-top"><span class="rr-card-num">90</span><span class="rr-pill rr-pill--dial">Since 2025</span></div>
+<div class="rr-sym-glow">Sc</div>
+<div class="rr-card-title">StoryCV</div>
+<p class="rr-card-desc">Talk through your work. Walk away with resume bullets that sound like you.</p>
+<div class="rr-card-footer"><span class="rr-url-pill rr-url-pill--dial">story.cv ↗</span></div>
 </a>
 
-<a class="rr-card" target="_blank" rel="noopener noreferrer" href="https://againandagaincards.com" style="position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; gap: 8px; min-height: 340px; padding: 24px; border-radius: 24px; text-decoration: none; background: #0f1a14; color: #f1f5ee; box-shadow: 0 1px 2px rgba(18,26,21,.10), 0 14px 34px rgba(18,26,21,.18)">
-<div style="display: flex; align-items: center; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: #9db3a5">95</span><span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: #e2f9dc; color: #137a35; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase"><span style="width: 7px; height: 7px; border-radius: 50%; background: #3fae4a"></span>New</span></div>
-<div class="rr-sym-glow" style="margin-top: 24px; font-family: Unbounded, sans-serif; font-size: 56px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #7df279; text-shadow: 0 0 2px #b8ff9e, 0 0 22px rgba(125,242,121,.55)">Ag</div>
-<div style="margin-top: 8px; font-family: Unbounded, sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.15">Again &amp; Again</div>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #9db3a5; max-width: 34ch">Digital stamp cards for your regulars. No app to download, nothing to print.</p>
-<div style="margin-top: auto; padding-top: 16px; display: flex; align-items: center; justify-content: space-between"><span style="padding: 6px 12px; border-radius: 999px; background: #1f2e25; color: #f1f5ee; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600">againandagaincards.com ↗</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #9db3a5">2026</span></div>
+<a class="rr-card rr-card--product" target="_blank" rel="noopener noreferrer" href="https://againandagaincards.com">
+<div class="rr-card-top"><span class="rr-card-num">95</span><span class="rr-pill rr-pill--new"><span class="rr-dot"></span>New</span></div>
+<div class="rr-sym-glow">Ag</div>
+<div class="rr-card-title">Again &amp; Again</div>
+<p class="rr-card-desc">Digital stamp cards for your regulars. No app to download, nothing to print.</p>
+<div class="rr-card-footer"><span class="rr-url-pill rr-url-pill--dial">againandagaincards.com ↗</span><span class="rr-year-tag">2026</span></div>
 </a>
 </div>
 </section>
 
-<section id="service" style="max-width: 1216px; margin: 0 auto; padding: 0 48px 80px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #3b4540">Service</div>
-<h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1; letter-spacing: -0.025em">Rather have a human do it?</h2>
+<section id="service" class="rr-service rr-wrap">
+<div class="rr-section-head-left">
+<div class="rr-kicker">Service</div>
+<h2 class="rr-h2">Rather have a human do it?</h2>
 </div>
-<a class="rr-card" target="_blank" rel="noopener noreferrer" href="https://redthreadcareers.com" style="position: relative; isolation: isolate; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; gap: 24px 48px; padding: 32px; border-radius: 24px; text-decoration: none; background: #7df279; border: 1px solid #3fae4a; color: #121a15; box-shadow: 0 1px 2px rgba(18,26,21,.10), 0 14px 34px rgba(18,26,21,.18)">
-<div style="flex: 0 0 auto; display: flex; flex-direction: column; gap: 8px; min-width: 160px">
-<span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700">91</span>
-<span style="font-family: Unbounded, sans-serif; font-size: 96px; font-weight: 600; letter-spacing: -0.02em; line-height: 1">Rt</span>
+<a class="rr-card rr-card--service" target="_blank" rel="noopener noreferrer" href="https://redthreadcareers.com">
+<div class="rr-service-symbol-col">
+<span class="rr-card-num">91</span>
+<span class="rr-service-symbol">Rt</span>
 </div>
-<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 10px">
-<div style="font-family: Unbounded, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.15">Red Thread Careers</div>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3b4540; max-width: 36em">We write your resume for you. You bring the stories, we find the thread that ties them together.</p>
+<div class="rr-service-content">
+<div class="rr-service-title">Red Thread Careers</div>
+<p class="rr-service-desc">We write your resume for you. You bring the stories, we find the thread that ties them together.</p>
 </div>
-<div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-start; gap: 14px">
-<span style="padding: 4px 10px; border-radius: 999px; background: #121a15; color: #7df279; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">Service · Since 2025</span>
-<span style="padding: 6px 12px; border-radius: 999px; background: #121a15; color: #7df279; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600">redthreadcareers.com ↗</span>
+<div class="rr-service-meta">
+<span class="rr-pill rr-pill--ink">Service · Since 2025</span>
+<span class="rr-url-pill rr-url-pill--ink">redthreadcareers.com ↗</span>
 </div>
 </a>
 </section>
 
-<section aria-label="Side projects" style="max-width: 1216px; margin: 0 auto; padding: 0 48px 96px">
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px 48px; padding: 24px 32px; border-radius: 24px; background: #ecebe3">
-<div style="flex: 0 0 220px; display: flex; flex-direction: column; gap: 8px">
-<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #3b4540">By the way</div>
-<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3b4540">We also make free little things, mostly for fun.</p>
+<section aria-label="Side projects" class="rr-sideprojects rr-wrap">
+<div class="rr-btw-band">
+<div class="rr-btw-head">
+<div class="rr-kicker">By the way</div>
+<p class="rr-btw-desc">We also make free little things, mostly for fun.</p>
 </div>
-<div style="flex: 1 1 480px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px 24px">
-<a class="rr-btw-item" target="_blank" rel="noopener noreferrer" href="https://pokeandsee.com" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #121a15"><span style="flex: 0 0 56px; height: 56px; padding: 6px 7px; box-sizing: border-box; border-radius: 10px; background: #ffffff; box-shadow: 0 1px 2px rgba(18,26,21,.06), 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #5d665f">93</span><span style="font-family: Unbounded, sans-serif; font-size: 20px; font-weight: 600; line-height: 1">Ps</span></span><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 15px; font-weight: 600">Poke &amp; See</b><span style="font-size: 13px; line-height: 1.4; color: #3b4540">Tiny science toys for 3 to 5 year olds</span></span></a>
-<a class="rr-btw-item" target="_blank" rel="noopener noreferrer" href="https://bollyquiz.com" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #121a15"><span style="flex: 0 0 56px; height: 56px; padding: 6px 7px; box-sizing: border-box; border-radius: 10px; background: #ffffff; box-shadow: 0 1px 2px rgba(18,26,21,.06), 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #5d665f">94</span><span style="font-family: Unbounded, sans-serif; font-size: 20px; font-weight: 600; line-height: 1">Bq</span></span><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 15px; font-weight: 600">BollyQuiz</b><span style="font-size: 13px; line-height: 1.4; color: #3b4540">Are you desi enough? Find out at game night</span></span></a>
-<a class="rr-btw-item" target="_blank" rel="noopener noreferrer" href="https://kavyaj.github.io/mrt-announcements/" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #121a15"><span style="flex: 0 0 56px; height: 56px; padding: 6px 7px; box-sizing: border-box; border-radius: 10px; background: #ffffff; box-shadow: 0 1px 2px rgba(18,26,21,.06), 0 6px 16px rgba(18,26,21,.08); display: flex; flex-direction: column; justify-content: space-between"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #5d665f">92</span><span style="font-family: Unbounded, sans-serif; font-size: 20px; font-weight: 600; line-height: 1">Mr</span></span><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 15px; font-weight: 600">MRT Announcements</b><span style="font-size: 13px; line-height: 1.4; color: #3b4540">Singapore's train chimes, on tap</span></span></a>
+<div class="rr-btw-grid">
+<a class="rr-btw-item" target="_blank" rel="noopener noreferrer" href="https://pokeandsee.com"><span class="rr-btw-icon"><span class="rr-btw-icon-num">93</span><span class="rr-btw-icon-sym">Ps</span></span><span class="rr-btw-text"><b class="rr-btw-title">Poke &amp; See</b><span class="rr-btw-item-desc">Tiny science toys for 3 to 5 year olds</span></span></a>
+<a class="rr-btw-item" target="_blank" rel="noopener noreferrer" href="https://bollyquiz.com"><span class="rr-btw-icon"><span class="rr-btw-icon-num">94</span><span class="rr-btw-icon-sym">Bq</span></span><span class="rr-btw-text"><b class="rr-btw-title">BollyQuiz</b><span class="rr-btw-item-desc">Are you desi enough? Find out at game night</span></span></a>
+<a class="rr-btw-item" target="_blank" rel="noopener noreferrer" href="https://kavyaj.github.io/mrt-announcements/"><span class="rr-btw-icon"><span class="rr-btw-icon-num">92</span><span class="rr-btw-icon-sym">Mr</span></span><span class="rr-btw-text"><b class="rr-btw-title">MRT Announcements</b><span class="rr-btw-item-desc">Singapore's train chimes, on tap</span></span></a>
 </div>
 </div>
 </section>
 
-<section id="about" style="max-width: 1216px; margin: 0 auto; padding: 0 48px 96px; display: flex; flex-wrap: wrap; gap: 32px 64px">
-<div style="flex: 0 0 220px; display: flex; flex-direction: column; gap: 16px">
-<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #3b4540">About</div>
-<img src="/assets/img/radradium-mark.svg" alt="" aria-hidden="true" width="88" height="88" style="width: 88px; height: 88px; display: block">
+<section id="about" class="rr-about rr-wrap">
+<div class="rr-about-side">
+<div class="rr-kicker">About</div>
+<img src="/assets/img/radradium-mark.svg" alt="" aria-hidden="true" width="88" height="88" class="rr-about-mark">
 </div>
-<div style="flex: 1 1 480px; max-width: 680px; display: flex; flex-direction: column; gap: 16px; font-size: 18px; line-height: 1.6; color: #3b4540">
-<p style="margin: 0; font-family: Unbounded, sans-serif; font-size: 26px; font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; color: #121a15">Radradium is run by Kavya Jahagirdar, a founder who builds for the internet from Singapore.</p>
-<p style="margin: 0">Resumey.Pro came first, back in 2019. In 2021 she quit her 9-to-5 to build on the internet full time, and the table has been filling up ever since.</p>
-<div style="margin-top: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #3b4540">Why "Rad Radium"?</div>
-<p style="margin: 0">It started as a pun. We wanted to build rad things, one element at a time, and Rad Radium made it past the shortlist.</p>
-<p style="margin: 0">Radium is element 88, it glows in the dark, and Rad Radium shortens to RR. The logo was right there!</p>
+<div class="rr-about-content">
+<p class="rr-about-lead">Radradium is run by Kavya Jahagirdar, a founder who builds for the internet from Singapore.</p>
+<p class="rr-m0">Resumey.Pro came first, back in 2019. In 2021 she quit her 9-to-5 to build on the internet full time, and the table has been filling up ever since.</p>
+<div class="rr-kicker rr-mt-16">Why "Rad Radium"?</div>
+<p class="rr-m0">It started as a pun. We wanted to build rad things, one element at a time, and Rad Radium made it past the shortlist.</p>
+<p class="rr-m0">Radium is element 88, it glows in the dark, and Rad Radium shortens to RR. The logo was right there!</p>
 </div>
 </section>
 
 </main>
 
-<footer style="background: #ecebe3">
-<div style="max-width: 1216px; margin: 0 auto; padding: 40px 48px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; font-size: 15px; line-height: 1.5; color: #3b4540">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<h4 style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #121a15">Radradium</h4>
-<p style="margin: 0">A small web studio in Singapore. Making things for the internet since 2019.</p>
+<footer class="rr-footer">
+<div class="rr-footer-inner rr-wrap">
+<div class="rr-footer-col">
+<h4 class="rr-footer-h4">Radradium</h4>
+<p class="rr-m0">A small web studio in Singapore. Making things for the internet since 2019.</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<h4 style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #121a15">Find us</h4>
-<p style="margin: 0; display: flex; flex-wrap: wrap; gap: 6px 14px"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kavya-jahagirdar/">LinkedIn ↗</a><a target="_blank" rel="noopener noreferrer" href="https://x.com/kavyaj93">X ↗</a></p>
+<div class="rr-footer-col">
+<h4 class="rr-footer-h4">Find us</h4>
+<p class="rr-footer-links"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kavya-jahagirdar/">LinkedIn ↗</a><a target="_blank" rel="noopener noreferrer" href="https://x.com/kavyaj93">X ↗</a></p>
 </div>
-<div style="grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid #dedcd2; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; line-height: 1.4; color: #3b4540">
+<div class="rr-footer-bottom">
 <span>Radradium · Registered in Singapore · UEN 202124283W</span>
 <span>© 2026 Radradium</span>
 </div>

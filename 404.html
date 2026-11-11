@@ -7,32 +7,14 @@
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<style>
-@font-face{font-family:"Unbounded";src:url("/assets/fonts/unbounded.woff2") format("woff2");font-weight:200 900;font-display:swap}
-@font-face{font-family:"Instrument Sans";src:url("/assets/fonts/instrument-sans.woff2") format("woff2");font-weight:400 700;font-display:swap}
-@font-face{font-family:"JetBrains Mono";src:url("/assets/fonts/jetbrains-mono.woff2") format("woff2");font-weight:100 800;font-display:swap}
-body{margin:0;background:#f6f5ef;color:#121a15;font-family:"Instrument Sans",ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#137a35}a:hover{color:#121a15}
-:focus-visible{outline:2px solid #137a35;outline-offset:3px}
-.rr-nav a{color:#3b4540;text-decoration:none}.rr-nav a:hover{color:#121a15}
-.rr-btn{transition:transform 80ms ease-out,box-shadow 80ms ease-out}
-.rr-btn:hover{transform:translateY(-1px)}
-.rr-btn:active{transform:translateY(4px);box-shadow:none !important}
-.rr-card{transition:transform 160ms ease-out,box-shadow 160ms ease-out}
-.rr-card:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(18,26,21,.10),0 24px 48px rgba(18,26,21,.22) !important}
-.rr-card:hover .rr-sym-glow{text-shadow:0 0 2px #b8ff9e,0 0 34px rgba(125,242,121,.8) !important}
-.rr-tile{transition:transform 140ms ease-out}
-a.rr-tile:hover{transform:translateY(-3px) rotate(-1.5deg)}
-.rr-btw-item:hover b{text-decoration:underline;text-decoration-color:#137a35;text-underline-offset:3px}
-@media (prefers-reduced-motion:reduce){.rr-card,.rr-card:hover,.rr-btn,.rr-tile,a.rr-tile:hover{transition:none;transform:none}}
-</style>
+<link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<main style="min-height: 100vh; box-sizing: border-box; padding: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; text-align: center">
-<div style="width: 160px; aspect-ratio: 1; padding: 16px 18px; box-sizing: border-box; border-radius: 24px; border: 1.5px dashed #868a83; color: #5d665f; display: flex; flex-direction: column; justify-content: space-between; text-align: left"><span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700">404</span><span style="font-family: Unbounded, sans-serif; font-size: 52px; font-weight: 600; line-height: 1; color: #121a15">?</span><span style="font-size: 13px; font-weight: 500">Unknown element</span></div>
-<h1 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 600; font-size: clamp(28px, 4vw, 40px); line-height: 1.05; letter-spacing: -0.025em">This element doesn't exist (yet).</h1>
-<p style="margin: 0; font-size: 18px; line-height: 1.5; color: #3b4540">The page you're after isn't on our table.</p>
-<a class="rr-btn" href="/" style="display: inline-flex; align-items: center; gap: 8px; padding: 0.8em 1.3em; border-radius: 16px; border: 2px solid #3fae4a; background: #7df279; color: #121a15; font-size: 16px; font-weight: 600; line-height: 1.1; text-decoration: none; box-shadow: 0 4px 0 #3fae4a">Back to the table</a>
+<main class="rr-404-main">
+<div class="rr-404-tile"><span class="rr-card-num">404</span><span class="rr-404-q">?</span><span class="rr-404-label">Unknown element</span></div>
+<h1 class="rr-404-h1">This element doesn't exist (yet).</h1>
+<p class="rr-404-desc">The page you're after isn't on our table.</p>
+<a class="rr-btn rr-btn-primary" href="/">Back to the table</a>
 </main>
 </body>
 </html>
