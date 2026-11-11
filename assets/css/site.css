@@ -115,7 +115,7 @@ a.rr-tile:hover { transform: translateY(-3px) rotate(-1.5deg); }
 .rr-card-top { display: flex; align-items: center; justify-content: space-between; }
 .rr-card-num { font-family: var(--font-mono); font-size: 14px; font-weight: 700; }
 .rr-sym-glow { margin-top: 24px; font-family: var(--font-display); font-size: 56px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: var(--radium); text-shadow: 0 0 2px var(--radium-glow), 0 0 22px rgba(125, 242, 121, 0.55); }
-.rr-card-title { margin-top: 8px; font-family: var(--font-display); font-size: 24px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.15; }
+.rr-card-title { margin-top: 8px; font-family: var(--font-display); font-size: 24px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.15; color: var(--on-dial); }
 .rr-card-desc { margin: 0; font-size: 17px; line-height: 1.55; color: var(--on-dial-muted); max-width: 34ch; }
 .rr-card-footer { margin-top: auto; padding-top: 16px; display: flex; align-items: center; justify-content: space-between; }
 
