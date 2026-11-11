@@ -1,0 +1,59 @@
+/* Radradium — generated from tokens.json */
+:root, [data-theme="light"] {
+  --paper: #f6f5ef;
+  --paper-2: #ecebe3;
+  --paper-raised: #ffffff;
+  --line: #dedcd2;
+  --line-strong: #868a83;
+  --ink: #121a15;
+  --ink-2: #3b4540;
+  --muted: #5d665f;
+  --radium: #7df279;
+  --radium-glow: #b8ff9e;
+  --radium-edge: #3fae4a;
+  --radium-deep: #137a35;
+  --radium-soft: #e2f9dc;
+  --dial: #0f1a14;
+  --dial-2: #1f2e25;
+  --on-dial: #f1f5ee;
+  --on-dial-muted: #9db3a5;
+  --ledge-ink: #000000;
+  --shadow-card: 0 1px 2px rgba(18, 26, 21, 0.10), 0 14px 34px rgba(18, 26, 21, 0.18);
+  --shadow-lift: 0 2px 4px rgba(18, 26, 21, 0.10), 0 24px 48px rgba(18, 26, 21, 0.22);
+  --shadow-tile: 0 1px 2px rgba(18, 26, 21, 0.06), 0 6px 16px rgba(18, 26, 21, 0.08);
+  --ledge-btn: 0 4px 0 #000000;
+  --ledge-radium: 0 4px 0 #3fae4a;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 80px;
+  --space-9: 120px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --font-display: "Unbounded", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+.display-xl { font-family: var(--font-display); font-size: 72px; line-height: 0.95; font-weight: 600; letter-spacing: -0.03em; }
+.display-l { font-family: var(--font-display); font-size: 44px; line-height: 1.0; font-weight: 600; letter-spacing: -0.025em; }
+.symbol { font-family: var(--font-display); font-size: 56px; line-height: 1.0; font-weight: 600; letter-spacing: -0.02em; }
+.symbol-s { font-family: var(--font-display); font-size: 28px; line-height: 1.0; font-weight: 600; letter-spacing: -0.02em; }
+.heading { font-family: var(--font-display); font-size: 24px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; }
+.lead { font-family: var(--font-sans); font-size: 20px; line-height: 1.5; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 17px; line-height: 1.55; font-weight: 400; }
+.body-s { font-family: var(--font-sans); font-size: 15px; line-height: 1.5; font-weight: 400; }
+.button { font-family: var(--font-sans); font-size: 16px; line-height: 1.1; font-weight: 600; }
+.label { font-family: var(--font-mono); font-size: 12px; line-height: 1.3; font-weight: 600; letter-spacing: 0.08em; }
+.number { font-family: var(--font-mono); font-size: 14px; line-height: 1.0; font-weight: 700; }
+@font-face { font-family: "Unbounded"; src: url("fonts/Unbounded-Variable.ttf") format("truetype"); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url("fonts/InstrumentSans-Variable.ttf") format("truetype"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url("fonts/InstrumentSans-Italic-Variable.ttf") format("truetype"); font-weight: 400 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/JetBrainsMono-Variable.ttf") format("truetype"); font-weight: 100 800; font-style: normal; font-display: swap; }

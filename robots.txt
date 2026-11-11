@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://radradium.com/sitemap.xml
